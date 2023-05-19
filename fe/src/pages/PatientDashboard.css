@@ -1,3 +1,123 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #050517;
+}
+
+.navbar{
+    background: #09075F;
+    width: 15%;
+    height: 95%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nav-heading{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 79%;
+    align-items: center;
+    gap: 70px;
+    border-bottom: 2px solid white;
+    height: 10%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.nav-content{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50%;
+    display: grid;
+
+
+}
+
+
+.nav-items{
+    
+    display: grid;
+    grid-template-columns: 15% 75% 10%;
+    align-items: flex-start;
+    color: white;  
+}
+
+.nav-mid-header{
+    color: white;
+}
+
+.nav-footer{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    bottom: -230px;
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .75rem;
+}
+
+.nav-footer-image{
+    background: blue;
+    width: 1.5rem;
+    height: 2rem;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 8px;
+    border-radius: 4px;
+    text-justify: auto;
+}
+
+.nav-footer-texts{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px ;
+    box-sizing: border-box;
+}
+
+.nav-footer-head{
+    color: red;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.nav-footer-content{
+    color: white;
+}
+.dashboard{
+    width: 80%;
+    height: 95%;
+    border-radius: 20px;
+    border: 2px solid grey;
+    color: white;
+    display: grid;
+    grid-template-rows: 10% 7% 70%
+}
+
+.dashboard-header{
+    width: 100%;
+    background: #09075F;
+    border-radius: 15px;
+}
+.dashboard-mid{
+    width: 100%;
+    border: 2px solid red;
+}
+.dashboard-main{
+    width: 100%;
+    border: 2px solid red;
+}
