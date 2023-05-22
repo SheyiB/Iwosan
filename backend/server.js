@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -15,7 +16,6 @@ app.use(express.json());
 
 app.use(morgan('dev'));
 
-connect(process.env.MONGODB_URI)
 
 app.use(cors( {
   origin: '*',
@@ -31,3 +31,5 @@ app.use('/api/v1/patient', PatientRoutes)
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`);
 });
+
+module.exports = app;
