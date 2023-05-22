@@ -8,7 +8,7 @@ function DoctorBox({name, role, bookedAppointments, bookStatus }) {
       <div className='doctor-box-main'>
        
        <span className='doctor-name'>
-            <img className='avatar' src={Avatar} />
+            <img className='avatar' src={Avatar} alt='' />
             <span >{name}</span>
        </span>
 
@@ -21,11 +21,11 @@ function DoctorBox({name, role, bookedAppointments, bookStatus }) {
        </span>
 
        <span className='doctor-chats'>
-            <img className='avatar' src={Chats} />
+            <img className='avatar' src={Chats} alt='' />
        </span>
        
        <span className='doctor-appointments'>
-            <span className={`doctor-button ${bookStatus == 'BOOKED'? 'booked' : 'free'}`}> {bookStatus}</span>
+            <span className={`doctor-button ${bookStatus === 'BOOKED'? 'booked' : 'free'}`}> {bookStatus}</span>
             <span> ... </span>
        </span>
        

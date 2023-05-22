@@ -6,7 +6,7 @@ function AppointmentBox({name, type, color, date}) {
     return (
       <div className='box-main'>
        <div className='box-left'>
-        <img className='avatar' src={Avatar} />
+        <img className='avatar' src={Avatar} alt='' />
         <span className='left-texts'>
             <span className='name'>{name}</span>
             <span className='type' style={{color: `${color}`}} >{type}</span>
