@@ -1,16 +1,24 @@
 import * as React from 'react';
-import './PatientDashboard.css';
+import './box.css';
+import Avatar from '../assets/Avatar.png'
 
-function PatientDashboard() {
+function AppointmentBox({name, type, color, date}) {
     return (
-      <div>
-        <h2 className='text-3xl font-bold underline'>Patient Dashboard</h2>
-        <p>Welcome, patient name!</p>
-        <h1>Home page</h1>
-        <Link to="/about">About</Link>
+      <div className='box-main'>
+       <div className='box-left'>
+        <img className='avatar' src={Avatar} />
+        <span className='left-texts'>
+            <span className='name'>{name}</span>
+            <span className='type' style={{color: `${color}`}} >{type}</span>
+        </span>
+       </div>
 
+       <div className='box-right'>
+        <span> ...</span>
+        <span className='date'> {date} </span>
+       </div>
       </div>
     );
   }
   
-export default PatientDashboard;
+export default AppointmentBox;
