@@ -1,7 +1,0 @@
-.nav-items{
-    
-    display: grid;
-    grid-template-columns: 15% 75% 10%;
-    align-items: flex-start;
-    color: var(--text-color);  
-}
