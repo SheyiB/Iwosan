@@ -21,7 +21,8 @@ To run the application locally, follow the instructions below.
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/SheyiB/Iwosan.git
+   cd Iwosan
     ```
 
 ## Frontend Setup
