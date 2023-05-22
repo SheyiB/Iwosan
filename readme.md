@@ -44,7 +44,7 @@ Follow these steps to set up and run the React frontend:
    - Define your environment variables in the `.env` file. For example:
      ```
      REACT_APP_API_URL=http://localhost:8080/api/v1
-     REACT_APP_API_KEY=RWSH@*VY8S2BUI2277211
+     REACT_APP_API_KEY=YourApiKey
      ```
 
 
@@ -75,7 +75,7 @@ Follow these steps to set up and run the Express backend:
      ```
      MONGODB_URI=mongodb://127.0.0.1:27017/PatientAPI
      PORT=8080
-     SECRETKEY=YourSeccretKey
+     SECRETKEY=SameAsApiKeyInFrontend
      JWT_EXPIRE=30d
      ```
 
@@ -118,6 +118,10 @@ To run tests for both the frontend and backend, follow these steps:
 
    This command executes the tests defined in your backend code using the testing framework.
    
+## Addition
+
+- Ensure for the .env files you use the same value for the secret key in the backend and the  REACT_APP_API_KEY in the frontend
+
 ## Conclusion
 
 Thank you
